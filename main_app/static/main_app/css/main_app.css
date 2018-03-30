@@ -1,0 +1,12 @@
+.header_tab {
+	border-bottom: 3px solid black;
+	text-align: center;
+	vertical-align: middle;
+	font-family: "Varela Round";
+	font-size:25px;
+	font-weight: 900;
+}
+
+.header_tab .row .col-sm-3{
+	padding: 25px 0; /* upper gap*/
+}

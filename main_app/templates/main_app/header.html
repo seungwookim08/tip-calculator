@@ -2,17 +2,58 @@
 <html lang="en">
 
 <head>
-	<title>SW.Kim / G.Lim</title>
+	<title>Price / Tax / Tip</title>
 	<meta charset="utf-8" />
+	
+	<!-- Loading Static Files_______________________________________ --> 
+	{% load staticfiles %}
+	<link 
+	rel="stylesheet" 
+	href="{% static 'main_app/css/bootstrap.min.css'%}" 
+	type="text/css">
+
+	<!-- Loading CSS Files___________________________________________ -->
+	{% load staticfiles %}
+	<link 
+	rel="stylesheet" 
+	href="{% static 'main_app/css/main_app.css'%}" 
+	type="text/css">
+
+	<!-- Loading Fonts___________________________________________ -->
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Varela+Round" />
+
+	<meta 
+	name="viewport" 
+	content="width=device-width, initial-scale=1.0"
+	/>
+
 </head>
 
-<body class="body" style="background-color:#f6f6f6">
-	
-	<div>
-	<h1> S.W Kim changes the world with his codes.</h1>
+<body class="body" style="background-color:'white'">
+	<div class = "container-fluid" style="min-height:95%; ">
+		<div class = "header_tab">
+		<div class = "row">
+		
+			<div class = "col-sm-2">
+				<center>
+					<img src="/static/main_app/img/logo.png" class="img=responsive" style="height:80px;">
+				</center>
+			</div>
+			<div class = "col-sm-7">
+			</div>
+			<div class = "col-sm-3">
+			MEET US
+			</div>
+		</div>
+		</div>
+
+		<div>
+		<h1> hi.</h1>
 	
 	   {% block content %}
-	   {% endblock %}	
+	   {% endblock %}
+
+		</div>
 	</div>
 </body>
 
