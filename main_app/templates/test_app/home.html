@@ -1,0 +1,32 @@
+{% extends "test_app/header.html" %}
+
+{% block content %}
+    <!--
+    {% for out_var in output %}
+        <p>{{out_var}}</p>
+    {% endfor%}
+	-->
+
+    <div class='container'>
+    	<form method='post'>
+    		{% csrf_token %}
+    		<!--   
+    		  
+			<input type='text'>
+    		-->
+    		
+    		{{form.as_p}} 
+    		{{dropdown.as_p}}
+
+    		<button type='submit'>Submit</button>
+    	</form>
+    Inputted Province: {{province}}<br>
+    Inputted Price: ${{price}}<br>
+    <br>
+    {{tax}} <br>
+    {{tip}} <br>
+    {{total}}
+    </div>
+
+
+{% endblock %}
