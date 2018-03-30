@@ -1,0 +1,1 @@
+web: gunicorn PriceTaxTip.wsgi --log-file -
