@@ -6,29 +6,36 @@
         <p>{{out_var}}</p>
     {% endfor%}
 	-->
+    <div class="screen">
+    <h1>Android Prototype</h1>
+    <br><br><br><br><br>
 
     <div class='container'>
+        <h2 class = "io"> User Input </h2>
     	<form method='post'>
     		{% csrf_token %}
-    		<!--   
-    		  
-			<input type='text'>
-    		-->
-    		
-    		{{form.as_p}} 
-    		{{dropdown.as_p}}
 
+    		{{dropdown.as_p}}
+            {{form.as_p}}
+    		
     		<button type='submit'>Submit</button>
     	</form>
-    Inputted Province: {{province}}<br>
-    Inputted Price: ${{price}}<br>
+        <br><br>
+
+        <h2 class = "io"> Output </h2>
+        Inputted Province: {{province}}<br>
+        Inputted Price: ${{price}}<br>
     <br>
-    {{tax}} <br>
-    {{tip}} <br>
-    {{total}} <br>
-    {{error}}
-
+    <br>
+    <div class="result">
+        {{tax}} <br>
+        {{tip}} <br>
+        {{total}} <br>
     </div>
-
+    <div class = 'err_msg'>
+        {{error}} 
+    </div>
+    </div>
+    </div>
 
 {% endblock %}

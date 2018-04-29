@@ -10,3 +10,53 @@
 .header_tab .row .col-sm-3{
 	padding: 25px 0; /* upper gap*/
 }
+
+.screen {
+	height: 830px;
+	text-align: center;
+	background-image: url('../img/smartphone2.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+p {
+	font-weight: 800;
+
+}
+
+h2.io{
+	color: #3ad912;
+	font-weight: 800;
+
+}
+
+a{
+	color: #3ad912;
+}
+
+.sec1, .sec2{
+	width:50%;
+	float:left;
+	padding-left: 20px ;
+	font-family: "Varela Round";
+}
+
+.sec1, .sec2 p{
+	font-size: 17px;
+}
+
+
+#id1 {
+	padding-left: 30px;
+}
+
+.result {
+	font-weight: 800;
+	font-size: 18px;
+}
+
+.err_msg {
+	color: red;
+	font-size : 19px;
+	font-weight: 800;
+}

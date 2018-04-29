@@ -3,8 +3,7 @@ from django.forms import ModelForm
 
 class TextForm(forms.Form):
 	#province = forms.CharField()
-	price = forms.CharField(required=False)
-
+	price = forms.CharField(required=False, label='Price [CAD]')
 
 PROVINCE_CHOICE = (
     ('AB','Alberta'),
@@ -20,7 +19,6 @@ PROVINCE_CHOICE = (
     ('SK','Saskatchewan'),
     ('YT','Yukon'),
 )
-
 
 class DropdownForm(forms.Form):
     def __init__(self, *args, **kwargs):
